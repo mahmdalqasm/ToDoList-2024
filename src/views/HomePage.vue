@@ -26,8 +26,10 @@
 
 <script setup>
 import { ref } from "vue";
+import todoMixins from "@/mixins/todo";
 
-const todoList = ref([]);
+const { todoList, addToLocalSt } = todoMixins();
+
 const todoObject = ref({
   text: "",
   from: "",
@@ -46,6 +48,7 @@ const addTodo = () => {
     todoObject.value.to != ""
   ) {
     todoList.value.push(todoObject.value);
+    addToLocalSt();
     alert("Todo Was Added Successfully");
     todoObject.value = {
       id: "",
