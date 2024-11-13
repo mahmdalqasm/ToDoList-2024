@@ -23,7 +23,7 @@
           <td>{{ todo.text }}</td>
           <td>{{ todo.from }}</td>
           <td>{{ todo.to }}</td>
-          <td>{{ new Date(todo.createdAt).toLocaleDateString() }}</td>
+          <td>{{ new Date(todo.createdAt).toDateString() }}</td>
           <td class="action">
             <div>
               <button @click="completeTodo(todo)" class="copmleted">
