@@ -2,8 +2,9 @@
   <div class="nav">
     <ul>
       <li v-for="route in router.options.routes" :key="route.name">
-        <router-link :to="{ name: route.name }"></router-link>
-        {{ route.meta.title }}
+        <router-link :to="{ name: route.name }">{{
+          route.meta.title
+        }}</router-link>
       </li>
     </ul>
   </div>
@@ -23,7 +24,7 @@ const router = useRouter();
   list-style: none;
   padding: 20px 0px;
   background-color: #078b69;
-  li {
+  a {
     color: white;
     text-decoration: none;
     font-size: 22px;
