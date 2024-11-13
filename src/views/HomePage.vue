@@ -36,3 +36,24 @@ const todoObject = ref({
   isCompleted: "",
 });
 </script>
+
+<style scoped lang="scss">
+form {
+  input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(0, 100, 71);
+    color: white;
+    border: 1px solid rgb(0, 100, 71);
+    border-radius: 7px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+</style>
