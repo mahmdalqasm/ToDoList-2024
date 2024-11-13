@@ -20,7 +20,7 @@
     >
     <input type="date" placeholder="to" v-model="todoObject.to" />
     <br />
-    <input type="submit" value="Add" />
+    <input type="submit" value="Add" @click="addTodo" />
   </form>
 </template>
 
