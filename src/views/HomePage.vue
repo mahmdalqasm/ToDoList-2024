@@ -27,6 +27,7 @@
 <script setup>
 import { ref } from "vue";
 
+const todoList = ref([]);
 const todoObject = ref({
   text: "",
   from: "",
@@ -35,6 +36,29 @@ const todoObject = ref({
   createdAt: "",
   isCompleted: "",
 });
+
+const addTodo = () => {
+  todoObject.value.id = todoList.value.length + 1;
+  todoObject.value.createdAt = new Date();
+  if (
+    todoObject.value.text != "" &&
+    todoObject.value.from != "" &&
+    todoObject.value.to != ""
+  ) {
+    todoList.value.push(todoObject.value);
+    alert("Todo Was Added Successfully");
+    todoObject.value = {
+      id: "",
+      text: "",
+      from: "",
+      to: "",
+      createdAt: "",
+      isCompleted: false,
+    };
+  } else {
+    alert("this inputs is required");
+  }
+};
 </script>
 
 <style scoped lang="scss">
