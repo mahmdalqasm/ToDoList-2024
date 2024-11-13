@@ -23,7 +23,7 @@ const router = useRouter();
   list-style: none;
   padding: 20px 0px;
   background-color: #078b69;
-  a {
+  li {
     color: white;
     text-decoration: none;
     font-size: 22px;
