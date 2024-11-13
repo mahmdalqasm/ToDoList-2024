@@ -3,7 +3,7 @@
   <router-view />
 </template>
 <script setup>
-import NavePar from './components/navePar.vue';
+import NavePar from "./components/navePar.vue";
 </script>
 <style lang="scss">
 #app {
