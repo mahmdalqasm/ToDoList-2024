@@ -40,22 +40,23 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import todosMixin from "@/mixins/todo";
 
-const { todoList } = todosMixin();
+const { todoList, addToLocalSt } = todosMixin();
 
 //Data
-// const index = ref(todoList.value.index);
+const index = ref(todoList.value.index);
 
-// const deleteTodo = () => {
-//   todosList.value.splice(index, 1);
-//   addToLocalSt();
-// };
+const deleteTodo = () => {
+  todoList.value.splice(index, 1);
+  addToLocalSt();
+};
 
-// const completeTodo = (todo) => {
-//   todo.isCompleted = !todo.isCompleted;
-//   addToLocalSt();
-// };
+const completeTodo = (todo) => {
+  todo.isCompleted = !todo.isCompleted;
+  addToLocalSt();
+};
 </script>
 
 <style scoped lang="scss">
