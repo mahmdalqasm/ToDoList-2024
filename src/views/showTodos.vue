@@ -57,3 +57,42 @@ const { todoList } = todosMixin();
 //   addToLocalSt();
 // };
 </script>
+
+<style scoped lang="scss">
+.con {
+  max-width: 80vw;
+  height: 100vh;
+  margin: 0px auto;
+}
+.action {
+  width: 30%;
+}
+table {
+  tr,
+  td,
+  th {
+    border: 1px solid;
+    padding: 5px;
+    width: 17.5%;
+  }
+  td {
+    button {
+      background-color: rgb(16, 110, 85);
+      color: white;
+      font-size: 18px;
+      padding: 5px 10px;
+      border: 1px solid rgb(16, 110, 85);
+      border-radius: 7px;
+      margin: 10px;
+      cursor: pointer;
+      &.deleted {
+        background-color: indianred;
+        border: 1px solid indianred;
+      }
+      &.copmleted {
+        min-width: 130px;
+      }
+    }
+  }
+}
+</style>
