@@ -81,6 +81,7 @@ form {
     border: 1px solid rgb(0, 100, 71);
     border-radius: 7px;
     margin: 20px 0px 20px 0px;
+    cursor: pointer;
   }
 }
 </style>
