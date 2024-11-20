@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref } from "vue";
-import todoMixins from "@/mixins/todo";
+import todoMixins from "dist/src/mixins/todo";
 
 const { todoList, addToLocalSt } = todoMixins();
 
