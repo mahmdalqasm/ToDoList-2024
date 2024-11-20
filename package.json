@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d d"
   },
-  "homepage": "https://mahmdalqasm.github.io/ToDoList/",
+  "homepage": "https://github.com/mahmdalqasm/ToDoList-2024.git",
   "dependencies": {
     "core-js": "^3.8.3",
     "gh-pages": "^6.2.0",
